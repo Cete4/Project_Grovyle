@@ -1,6 +1,6 @@
 # Project_Grovyle
 
-##WEATHER (AI) CALENDAR SCHEDULER  
+## WEATHER (AI) CALENDAR SCHEDULER  
 
 * The application can provide simple outdoor ideas for the time and date depending on your calendar & location for the activity that is best suited for the day. 
 
