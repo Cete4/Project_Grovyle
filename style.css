@@ -185,6 +185,7 @@ body {
     display: block;
     margin: 10px 0 0 0;
     text-align: center;
+<<<<<<< Updated upstream
 }
 
 .week-list>li .day-icon {
@@ -239,3 +240,65 @@ body {
     margin-right: 5px;
 }
 
+=======
+    background-color: transparent;
+    background-image: url("https://wallpaperaccess.com/full/1540001.jpg");
+    color: black;
+    border-radius: 0;
+    border-bottom: 10px solid black;
+  }
+  
+  .description{
+    white-space: pre-wrap;
+  }
+  
+  .time-block{
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .far {
+    width: 40px; 
+  }
+  
+  .row {
+    height: 80px;
+    border-top: 1px solid white;
+    
+  }
+  
+  .hour {
+    background-color: #ffffff;
+    color: #000000;
+    border-top: 1px dashed #000000;
+    padding-top: 20px; 
+  }
+  
+  .past {
+    background-color: #d3d3d3;
+    color:black;
+  }
+  
+  .present {
+    background-color: lightblue;
+    color:black; 
+  }
+  
+  .future {
+    background-color: blue;
+    color:black; 
+  }
+  
+  .saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #06AED5;
+    color: white;
+  }
+  
+  .saveBtn i:hover {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+  }
+>>>>>>> Stashed changes
