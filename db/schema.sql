@@ -1,5 +1,5 @@
-CREATE DATABASE chirpy;
-USE chirpy;
+CREATE DATABASE weather_calendar;
+USE weather_calendar;
 
 CREATE TABLE `WEEKLY_FORECAST` (
   `DATE` DATETIME NOT NULL,
