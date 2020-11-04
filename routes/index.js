@@ -1,7 +1,5 @@
 /* eslint-disable */
-/*
-This file is imported from google and shouldn't be changed by eslint
-*/
+/*This file is imported from google and shouldn't be changed by eslint*/
 const fs = require('fs');
 const readline = require('readline');
 const {google} = require('googleapis');
