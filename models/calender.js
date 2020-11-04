@@ -1,6 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
     var Calendar= sequelize.define("Calendar", {
-
         DATE: DataTypes.DATETIME,
         LOCATION: DataTypes.STRING,
         TEMP: DataTypes.INTEGER, 
