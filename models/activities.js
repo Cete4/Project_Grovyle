@@ -2,7 +2,7 @@ module.exports = function(sequelize, DataTypes) {
     var Activities= sequelize.define("Activities", {
       // Giving the Activities model a name of type STRING
         ID: DataTypes.INTEGER,
-        LOCATION: DataTypes.STRING,
+        ACTIVITY: DataTypes.STRING,
         ICON: DataTypes.INTEGER,
         THRESHOLD: DataTypes.INTEGER
     });
