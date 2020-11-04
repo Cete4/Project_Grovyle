@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/Cete4/Project_Grovyle#readme",
   "dependencies": {
+<<<<<<< HEAD
     "express": "^4.17.1",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
@@ -37,5 +38,8 @@
     "eslint": "^7.12.1",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.21.5"
+=======
+    "express": "^4.17.1"
+>>>>>>> 28fd1cd49ef7e900127f23012c2787d9f988ce88
   }
 }
