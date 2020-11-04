@@ -1,7 +1,11 @@
 {
     "development": {
       "username": "root",
+<<<<<<< HEAD
+      "password": "manyfewone",
+=======
       "password": "",
+>>>>>>> 28fd1cd49ef7e900127f23012c2787d9f988ce88
       "database": "weather_calendar", 
       "host": "127.0.0.1",
       "dialect": "mysql"
