@@ -10,7 +10,7 @@
     <title>Team grovyle</title>
 </head>
 
-<body onload="startTime()">
+<body onload="startTime(), getLocation()">
     <div class="container">
         <div class="card">
             <div class="front">
@@ -78,7 +78,8 @@
                             <div id="date"></div>
                             <div id="day"></div>
                             <div id="month"></div>
-                            <i class="fa fa-pencil edit" aria-hidden="true"></i>
+                            <div id="coordinate"></div>
+                            <i id="json"></i>
                         </div>
                     </div>
                 </div>
@@ -86,6 +87,7 @@
             <div class="back">
                 <div class="contentback">
                     <div class="backcontainer">
+                        <p></p>
                     </div>
                 </div>
             </div>
