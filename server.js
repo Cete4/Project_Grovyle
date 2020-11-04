@@ -11,8 +11,9 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+
 // Import routes and give the server access to them.
-let routes = require("./controllers/controller.js");
+let routes = require("./routes/html-routes.js");
 
 app.use(routes);
 
