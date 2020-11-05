@@ -2,8 +2,6 @@ let cardElement = document.querySelector(".card");
 
 cardElement.addEventListener("click", flip);
 
-const { query } = require("express");
-
 function flip() {
     cardElement.classList.toggle("flipped")
 }
@@ -55,17 +53,3 @@ function checkTime(i) {
     if (i < 10) { i = "0" + i };
     return i;
 }
-
-const iconElement = document.querySelector(".weather-icon");
-const tempElement = document.querySelector(".temperature-value p");
-const descElement = document.querySelector(".temperature-discription p");
-const locationElement = document.querySelector(".location p");
-
-const weather = {};
-
-weather.temperature = {
-    unit = "fehrenheight"
-}
-
-const KELVIN = 273;
-const key = "c469fa08a7e34c2dbca8903af9a019bb"
