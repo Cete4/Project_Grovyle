@@ -1,8 +1,8 @@
 # Project_Grovyle
 
-![Screen Shot Weather API.png.](Front%20of%20Weather%20API.png)
+![Screen Shot Weather API.png.](Front%20of%20Weather%20API.001.png)
 
-![Screen Shot Weather API.png.](Back%20of%20Weather%20API.png)
+![Screen Shot Weather API.png.](Back%20of%20the%20Weather%20API.001.png)
 
 ## WEATHER (AI) CALENDAR SCHEDULER
 
