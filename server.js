@@ -1,5 +1,7 @@
+require('dotenv').config()
 const express = require('express');
 
+const key = process.env.API_KEY;
 const PORT = process.env.PORT || 8080;
 
 const app = express();
@@ -19,12 +21,13 @@ app.use(express.json());
 
 // Import routes and give the server access to them.
 const routes = require('./routes/html-routes.js');
-
+const apiRoutes = require('./routes/api-routes.js');
 app.use(routes);
-
+app.use(apiRoutes);
 // Syncing our sequelize models and then starting our Express app
 db.sequelize.sync({ force: true }).then(function() {
     app.listen(PORT, function() {
+        console.log(key)
         console.log("App listening on PORT " + PORT);
     });
 });
