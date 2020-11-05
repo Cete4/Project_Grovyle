@@ -4,6 +4,8 @@
 
 ![Screen Shot Weather API.png.](Back%20of%20the%20Weather%20API.001.png)
 
+![](Weather%20API.gif)
+
 ## WEATHER (AI) CALENDAR SCHEDULER
 
 * The application can provide simple outdoor ideas for the time and date depending on your calendar & location for the activity that is best suited for the day.
