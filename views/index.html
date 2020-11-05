@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script defer src="assets/js/script.js"></script>
-    <script defer src="assets/js/weather.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Team grovyle</title>
 </head>
@@ -101,12 +99,22 @@
             <div class="back">
                 <div class="contentback">
                     <div class="backcontainer">
-                        <p></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+<!-- "Activity" -->
+    <form id="form">
+        <p>Activity:
+        <input type="text" id="name" maxlength="255"/>
+        <input type="submit" id="add-btn" value="Submit">
+        </p>
+    </form>
+
 </body>
+<script defer src="assets/js/script.js"></script>
+<script defer src="assets/js/weather.js"></script>
+<script defer src="assets/js/post.js"></script>
 
 </html>
