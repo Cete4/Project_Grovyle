@@ -22,9 +22,6 @@
 
 The geo locator will find the address of the user, the user can also submit their information and the app will generate an activity.
 
-## Links
-
-
 ## Features in Development
 
 * Ability to find the best activity at all times
@@ -51,3 +48,6 @@ Webkits
 
 Peter, Violet, Micah & Siyanda
 
+## Links
+
+Github: https://github.com/Cete4/Project_Grovyle.git
