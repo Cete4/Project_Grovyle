@@ -1,6 +1,6 @@
 # Project_Grovyle
 
-![picture](img/Screen Shot Weather API.png.) 
+![picture](Screen Shot Weather API.png.) 
 
 ## WEATHER (AI) CALENDAR SCHEDULER
 
