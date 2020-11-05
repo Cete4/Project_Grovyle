@@ -10,7 +10,6 @@ weather.temperature = {
 }
 
 const KELVIN = 273;
-const key = "77314ab291abe0a7757a9d67c15fc924"
 
 if ('geolocation' in navigator) {
     navigator.geolocation.getCurrentPosition(setPosition);
@@ -22,27 +21,34 @@ if ('geolocation' in navigator) {
 function setPosition(position) {
     let latitude = position.coords.latitude;
     let longitude = position.coords.longitude;
-
     getWeather(latitude, longitude);
 }
 
 function getWeather(latitude, longitude) {
-    let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
-
-    fetch(api)
+    fetch("/api/key")
         .then(function(response) {
-            let data = response.json();
-            return data;
+            let key = response.json();
+            return key;
         })
-        .then(function(data) {
-            weather.temperature.value = Math.floor(data.main.temp - KELVIN);
-            weather.description = data.weather[0].description;
-            weather.iconId = data.weather[0].icon;
-            weather.city = data.name;
-            weather.country = data.sys.country;
-        })
-        .then(function() {
-            displayWeather();
+        .then(function(key) {
+
+            let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+            console.log(api)
+            fetch(api)
+                .then(function(response) {
+                    let data = response.json();
+                    return data;
+                })
+                .then(function(data) {
+                    weather.temperature.value = Math.floor(data.main.temp - KELVIN);
+                    weather.description = data.weather[0].description;
+                    weather.iconId = data.weather[0].icon;
+                    weather.city = data.name;
+                    weather.country = data.sys.country;
+                })
+                .then(function() {
+                    displayWeather();
+                });
         });
 }
 
