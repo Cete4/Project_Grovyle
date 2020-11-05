@@ -44,7 +44,7 @@ function startTime() {
     document.getElementById('day').innerHTML =
         wd;
     document.getElementById('month').innerHTML =
-        mt + "/" + y;
+        mt + " / " + y;
 
     var t = setTimeout(startTime, 500);
 }
