@@ -210,6 +210,11 @@ div p {
     outline: none;
     float: right;
 }
+#delete-btn {
+    cursor: pointer;
+    outline: none;
+    float: left;
+}
 
 .flipped {
     transform: rotateY(-180deg);
