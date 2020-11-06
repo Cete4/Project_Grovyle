@@ -17,7 +17,7 @@ router.get("/api/activities", function(req, res) {
     });
 });
 
-router.get("/api/activities/:TEMP", function(req, res) {
+router.get("/api/activities/:TEMP??", function(req, res) {
 
     db.activities.findOne({
         where: {
