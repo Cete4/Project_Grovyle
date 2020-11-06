@@ -1,4 +1,3 @@
-
 const iconElement = document.querySelector(".weather-icon");
 const tempElement = document.querySelector(".temperature-value p");
 const descElement = document.querySelector(".temperature-description p");
@@ -33,7 +32,7 @@ function getWeather(latitude, longitude) {
         })
         .then(function(key) {
 
-            let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+            let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
             console.log(api)
             fetch(api)
                 .then(function(response) {
