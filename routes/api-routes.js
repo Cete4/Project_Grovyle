@@ -17,11 +17,11 @@ router.get("/api/activities", function(req, res) {
     });
 });
 
-router.get("/api/activities/:threshold", function(req, res) {
+router.get("/api/activities/:TEMP", function(req, res) {
 
     db.activities.findOne({
         where: {
-            threshold: req.params.threshold
+            TEMP: req.params.TEMP
         }
     }).then(function(dbActivities) {
         res.json(dbActivities);
