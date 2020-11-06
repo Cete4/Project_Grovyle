@@ -1,3 +1,5 @@
+var activityElement = document.querySelector(".backcontainer p");
+
 $("#form").on("submit", function(event) {
     event.preventDefault();
     console.log("ran the wrong call");
@@ -31,5 +33,6 @@ $(".front").on("click", function() {
             console.log(weather.temperature.value)
                 // log the data we found
             console.log(data);
+            activityElement.innerHTML = `${data.ACTIVITY}`;
         });
 })
